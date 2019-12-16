@@ -1,0 +1,22 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div *ngFor="let member of communityMembers" class="dashboard-card">
+                <div class="card card-profile">
+                    <div class="card-avatar">
+                        <a href="javascript:void(0)">
+                            <img class="img" src="./assets/img/faces/marc.jpg" />
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-category text-gray">{{ member.typeOfMembership }}</h6>
+                        <h4 class="card-title">{{ member.memberDetails?.firstName }} {{ member.memberDetails?.middleName }} {{ member.memberDetails?.lastName }}</h4>
+                        <p class="card-description">
+                            {{ member.localAddress?.location }}, {{ member.localAddress?.city }} - {{ member.localAddress?.pinCode }}, 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

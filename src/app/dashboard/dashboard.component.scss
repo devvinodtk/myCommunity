@@ -1,0 +1,15 @@
+.container-fluid {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  .dashboard-card {
+    width: 100%;
+    max-width: 300px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .card-description {
+      font-size: 12px;
+    }
+  }
+}
